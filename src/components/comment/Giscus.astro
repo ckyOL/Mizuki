@@ -76,7 +76,7 @@ const config = {
 			script.setAttribute("data-emit-metadata", config.emitMetadata);
 			script.setAttribute("data-input-position", config.inputPosition);
 			script.setAttribute("data-theme", theme);
-			script.setAttribute("data-lang", config.lang);
+			script.setAttribute("data-lang", config.lang ? config.lang.replace('_', '-') : 'en');
 			script.setAttribute("data-loading", config.loading);
 			script.crossOrigin = "anonymous";
 			script.async = true;
